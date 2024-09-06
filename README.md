@@ -17,7 +17,9 @@ Esta aplicación permite subir archivos a Google Drive, gestionar permisos y act
 
 - **Google Cloud Console**: Debes configurar un proyecto en la [Google Cloud Console](https://console.cloud.google.com/) y habilitar la API de Google Drive.
 - **.NET Framework**: Este proyecto se desarrolla en .NET, asegúrate de tener el SDK instalado.
-- **Credenciales OAuth2**: Debes obtener las credenciales OAuth2 desde Google Cloud.
+- **Credenciales OAuth2**: Debes obtener las credenciales OAuth2, se obtienen dentro de la carpeta \bin\debug\config mediante la libreria DriveUpload y el menu (opcion 2)
+- **Librería DriveUpload**: Descarga la librería necesaria desde el siguiente enlace: [GoogleDriveUpdate](https://github.com/MrDUFYGY/GoogleDriveUpdate).
+
 
 ## Configuración de Credenciales
 
@@ -43,8 +45,8 @@ La aplicación requiere un archivo de configuración llamado `App.config` en la 
   <add key="Scope" value="https://www.googleapis.com/auth/drive" />
 </appSettings>
 
-
-Uso
+```
+##Uso
 Al iniciar la aplicación desde la consola, aparecerá un menú con varias opciones:
 
 Subir archivo a Google Drive: Permite seleccionar un archivo desde tu máquina local y subirlo a tu Google Drive.
